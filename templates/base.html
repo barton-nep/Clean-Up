@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Up Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Clean Up Managing Model</h1>
+    </header>
+    <section id="content">
+        {% block content %}{% endblock %}
+    </section>
+    <footer>
+        <p>Created By: </p>
+    </footer>
+</body>
+<script src="{{ url_for('static', filename='/app.js') }}"></script>
+</html>

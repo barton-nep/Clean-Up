@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main id="result-main">
+    <div class="content">
+        <img id="chosen-img" src="{{ url_for('static', filename='img/' ~ image_url) }}" alt="Uploaded Image">
+        <div class="details-box">
+            <h2>Details</h2>
+            <p id="type">Type: {{ prediction }}</p>
+            <p id="danger">Confidence: </p> {# Replace with actual danger prediction #}
+        </div>
+    </div>
+    <div id="new-img-btn"><a href='{{ url_for("index") }}'>Select New Image</a></div>
+</main>
+{% endblock %}

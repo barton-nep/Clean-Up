@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main id="input-main">
+    <h2>Choose an Image</h2>
+    <div class="image-choosing">
+        <form action="{{ url_for('upload_image') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" id="user_in">
+            <input type="submit" id="get-img" value="Submit">
+        </form>
+    </div>
+    <img id="chosen-img">
+</main>
+{% endblock %}
